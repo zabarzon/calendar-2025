@@ -1,0 +1,53 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar-container {
+    text-align: center;
+    background: url('background.jpg') no-repeat center center; /* Фоновое изображение */
+    background-size: cover; /* Масштабирование изображения */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Для корректного позиционирования элементов */
+    z-index: 1; /* Убедитесь, что текст и кнопки выше фона */
+}
+
+h1 {
+    color: #ffffff; /* Белый цвет текста для контраста */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки */
+    gap: 10px;
+}
+
+.month-button {
+    background-color: rgba(76, 175, 80, 0.8); /* Полупрозрачный зеленый цвет */
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.month-button:hover {
+    background-color: rgba(69, 160, 73, 0.9); /* Темнее при наведении */
+}
+
+.month-button:active {
+    background-color: rgba(62, 142, 65, 1); /* Еще темнее при нажатии */
+}
